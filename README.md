@@ -34,7 +34,7 @@ I'm calling this the *bare bones* framework because it doesn't come bundled with
 
 **Why do you call QuickLee CSS an intermediate level framework?**
 
-There is a little bit of a learning curve if you're new to SASS, but if you're familiar with SCSS you should be OK.
+QuickLee CSS doesn't spoon feed you when it comes to styling, it just gives you the spoon you need to be able to feed yourself. Some care will be required on your part.
 
 There are some features unique to QuickLee CSS which you will need to learn, but this shouldn't be too difficult to pick up as it piggy backs of the core SASS functionality.
 
@@ -49,6 +49,10 @@ From the start I wanted to keep the CSS that makes stuff work seperate from the 
     }
 
 The hook `%ql-nav-item` targets menu items without interferring with the CSS that makes the menu work.
+
+**What about JavaScript functionality?**
+
+There is 1 very small JavaScript file included which controls the responsive menu collapse. You are of course free to use use this JS file for your own scripts with minimal HTTP requests.
 
 **How do I... ?**
 
