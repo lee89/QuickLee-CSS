@@ -7,6 +7,20 @@
  * 
  * Based on the Responive Grid System (http://responsivegridsystem.com)
  * licenced under Creative Commons Attribution 3.0 licence (http://creativecommons.org/licenses/by/3.0/)
+ *
+ * Usage:
+ *
+ * <div class="row">
+ *   <div class="col span_6"></div>
+ *   <div class="col span_6"></div>
+ * </div>
+ *
+ * Add .group to .row element to clear float.
+ * Total of .span_X should add up to 12 e.g.
+ *    span_4 + span_6 + span_2 or
+ *    span_4 + span_4 + span_4 or
+ *    span_6 + span_6
+ *    etc
  */
 
 .row {
