@@ -1,4 +1,5 @@
 # QuickLee CSS
+### beta 1
 
 QuickLee CSS is The mobile first, bare bones web development framework.
 
