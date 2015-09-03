@@ -1,0 +1,61 @@
+/**
+ * QuickLee CSS 1.0.0
+ * Copyright 2015. Lee Price
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ *
+ * _forms.scss
+ *
+ * Form resets and default styling hooks
+ *
+ * %ql-form : styles for the input, select & textarea elements
+ * %ql-form-button : styles for all form buttons
+ * 
+ */
+
+select,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=number],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea,
+{
+	border: 1px solid #d6d6d6;
+	background: none;
+	padding: 8px;
+	width: 100%;
+	
+	height: 35px;
+	border-radius: 5px;
+
+	@extend %ql-form;
+
+	&:focus {
+		outline: none;
+		border: 1px solid #ddd;
+		box-shadow: 1px 1px 1px rgba(black, 0.25);
+	}
+
+
+}
+textarea{height: 100px}
+
+form button, form input[type=submit], form input[type=reset], form input[type=button] {
+	
+	border: 0;
+
+	&:focus{outline: none}
+
+	@extend %ql-form-button;
+
+}

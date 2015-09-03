@@ -1,0 +1,90 @@
+/**
+ * QuickLee CSS 1.0.0
+ * Documentation: http://lees.space/quicklee
+ * Copyright 2015. Lee Price
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ *
+ * _defaults.scss
+ * 
+ * Specify some of the appearance elements defaults here.
+ */
+
+@import 'components/normalize'; // IMPORTANT
+
+
+/**
+ * Your own defaults
+ */
+
+::selection 	 { background-color: rgba($secondary-color, 0.25) }
+::-moz-selection { background-color: rgba($secondary-color, 0.25) }
+
+body { font: 14px arial }
+
+/**
+ * Link and navigation elements
+ */
+
+a:link, a:visited { color: $main-color;}
+a:hover, a:active { color: $secondary-color }
+
+%ql-nav-item, %ql-nav-toggle {
+	/* Menu item default state */
+	&:hover {
+	/* Menu item hover state */
+		background: $main-color;
+	}
+}
+
+%ql-nav-bar {
+	/* Navigation bar styles */
+	background: $secondary-color;
+}
+
+%ql-nav-toggle {
+	/* Mobile navigation toggle default state */
+	background: darken($secondary-color, 10%);
+	text-decoration: none;
+	padding: 10px 0;
+	&:hover { /* Mobile navigation toggle hover state */ }
+}
+
+
+/**
+ * Text elements
+ */
+p {
+	line-height: 23px;
+}
+
+code {}
+
+blockquote{}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $main-color;
+}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+
+/**
+ * Form elements
+ */
+
+%ql-form {
+	/* Form element default state */
+	&:focus { /* Form element focus state */ }
+	&:hover { /* Form element hover state */ }
+}
+
+%ql-form-button {
+	/* Form button default state */
+	&:hover { /* Form button hover state */ }
+	&:active { /* Form buton active state */ }
+}
+
+

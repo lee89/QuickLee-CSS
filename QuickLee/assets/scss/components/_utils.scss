@@ -1,0 +1,61 @@
+/**
+ * QuickLee CSS
+ * Documentation: http://lees.space/quicklee
+ * Copyright 2015. Lee Price
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ *
+ * _utils.scss
+ * 
+ * A library of helper classes and mixins to use in your project
+ * Use this file to write your own common classes and mixins 
+ */
+
+
+.container {
+  max-width: $container-width;
+  width: 100%;
+  @if $container-centered
+  {
+    margin: 0 auto;
+  }
+}
+
+.clearfix { @extend .group }
+
+.alignleft { float: left; margin: 0 5px 5px 0 }
+.alignright { float: right; margin: 0 0 5px 5px }
+.aligncenter { display: block; margin: 0 auto; }
+
+.text-aligncenter { text-align: center; }
+
+.full-width { width: 100% }
+
+.large-text { font-size: 2.5em }
+
+/**
+ * MIXIN LIBRARY
+ */
+
+
+// Responsive layout breakpoints
+// You can define breakpoints here
+@mixin breakpoint($point) {
+  @if $point == tab {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: 1200px)  { @content; }
+  }
+  @else {
+    @media ($point)  { @content; }
+  }
+}
+
+// Size
+@mixin size($width, $height: $width){
+  width: $width;
+  height: $height;
+}

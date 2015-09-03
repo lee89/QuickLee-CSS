@@ -1,0 +1,42 @@
+/*!
+ * QuickLee CSS 1.0.0
+ * Copyright 2015. Lee Price
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ *
+ * Setting up your QuickLee CSS styles
+ * For more control use _defaults.scss
+ *
+ * Use @import 'quicklee';
+ *
+ * in your project to initiate QuickLee CSS
+ */
+
+/**
+ * Colour Pallete
+ */
+$main-color: #EFEFEF;
+$secondary-color: darken($main-color, 20%);
+
+
+/**
+ * Layout
+ */
+$page-margin: 10px; // How much margin should the page have
+$container-width: 1000px; // Maximum width of .container at 'large' size. Set to 100% for full width fluid
+$container-centered: true; // Should .container be centred when full width has been reached
+
+
+/**
+ * DO NOT EDIT BELOW.
+ * THESE FILES ARE REQUIRED FOR QuickLee CSS TO WORK!!
+ */
+
+@import 'components/utils';
+@import 'components/forms';
+@import 'components/nav';
+@import 'components/grid';
+/**
+UNCOMMENT THIS BLOCK TO USE WEBFONTS
+@import 'components/typography';
+*/
+@import 'defaults';

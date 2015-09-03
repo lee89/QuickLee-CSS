@@ -1,0 +1,68 @@
+/**
+ * QuickLee CSS 1.0.0
+ * Copyright 2015. Lee Price
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ *
+ * _nav.scss
+ * 
+ * Structure for the navigation
+ * Use the following hooks to style the navigation
+ * 
+ * %ql-nav-item  :    Styles for each menu item
+ * %ql-nav-bar   :    Styles for the navigation bar
+ * 
+ */
+
+ nav.main-menu{
+ 	ul
+ 	{
+ 		list-style: none;
+ 		margin: 0; padding: 0;
+ 		@extend .group;
+
+ 		li {
+ 			margin: 0; padding: 0;
+ 			display: block;
+
+ 			@include breakpoint(tab)
+ 			{
+ 				display: inline-block;
+ 				float: left;
+ 			}
+
+ 			a{
+ 				display: block;
+ 				text-decoration: none;
+ 				padding: 10px;
+ 				border: none;
+
+ 				@extend %ql-nav-item;
+
+ 			}
+
+ 		}
+
+ 		&.hidden {
+ 			display: none;
+
+ 			@include breakpoint(tab) { display: block }
+ 		}
+
+ 		@extend %ql-nav-bar;
+
+ 	}
+
+ 	.toggle-menu {
+ 		display: block;
+ 		padding: 5px 0;
+ 		text-align: center;
+
+ 		@extend %ql-nav-toggle;
+
+ 		@include breakpoint(tab)
+ 		{
+ 			display: none;
+ 		}
+ 	}
+
+ }
