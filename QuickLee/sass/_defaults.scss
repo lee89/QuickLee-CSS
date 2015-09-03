@@ -38,14 +38,10 @@ a:hover, a:active { color: $secondary-color }
 
 %ql-nav-bar {
 	/* Navigation bar styles */
-	background: $secondary-color;
 }
 
 %ql-nav-toggle {
 	/* Mobile navigation toggle default state */
-	background: darken($secondary-color, 10%);
-	text-decoration: none;
-	padding: 10px 0;
 	&:hover { /* Mobile navigation toggle hover state */ }
 }
 
