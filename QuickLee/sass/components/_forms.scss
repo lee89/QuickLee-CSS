@@ -38,7 +38,7 @@ textarea,
 	height: 35px;
 	border-radius: 5px;
 
-	@extend %ql-form;
+	@extend %ql-form !optional;
 
 	&:focus {
 		outline: none;
@@ -56,6 +56,6 @@ form button, form input[type=submit], form input[type=reset], form input[type=bu
 
 	&:focus{outline: none}
 
-	@extend %ql-form-button;
+	@extend %ql-form-button !optional;
 
 }

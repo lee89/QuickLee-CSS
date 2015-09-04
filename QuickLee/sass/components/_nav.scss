@@ -18,7 +18,7 @@
  	{
  		list-style: none;
  		margin: 0; padding: 0;
- 		@extend .group;
+ 		@extend .group !optional;
 
  		li {
  			margin: 0; padding: 0;
@@ -36,7 +36,7 @@
  				padding: 10px;
  				border: none;
 
- 				@extend %ql-nav-item;
+ 				@extend %ql-nav-item !optional;
 
  			}
 
@@ -48,7 +48,7 @@
  			@include breakpoint(tab) { display: block }
  		}
 
- 		@extend %ql-nav-bar;
+ 		@extend %ql-nav-bar !optional;
 
  	}
 
@@ -57,7 +57,7 @@
  		padding: 5px 0;
  		text-align: center;
 
- 		@extend %ql-nav-toggle;
+ 		@extend %ql-nav-toggle !optional;
 
  		@include breakpoint(tab)
  		{
