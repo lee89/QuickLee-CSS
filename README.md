@@ -1,9 +1,7 @@
 # QuickLee CSS
 ### beta 1
 
-QuickLee CSS is The mobile first, bare bones web development framework.
-
-*It is an intermediate level framework and you will require some knowledge of SASS to use it.*
+QuickLee CSS is The mobile first, bare bones web development framework written in SASS
 
 ## Features
 
