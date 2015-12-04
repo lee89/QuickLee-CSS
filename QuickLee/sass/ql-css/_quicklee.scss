@@ -25,6 +25,10 @@ $page-margin: 10px; // How much margin should the page have
 $container-width: 1000px; // Maximum width of .container at 'large' size. Set to 100% for full width fluid
 $container-centered: true; // Should .container be centred when full width has been reached
 
+/**
+UNCOMMENT THIS BLOCK TO USE WEBFONTS
+@import 'components/typography';
+*/
 
 /**
  * DO NOT EDIT BELOW.
@@ -35,8 +39,5 @@ $container-centered: true; // Should .container be centred when full width has b
 @import 'components/forms';
 @import 'components/nav';
 @import 'components/grid';
-/**
-UNCOMMENT THIS BLOCK TO USE WEBFONTS
-@import 'components/typography';
-*/
-@import 'defaults';
+
+@import 'components/normalize';
