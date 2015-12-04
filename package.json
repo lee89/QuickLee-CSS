@@ -1,0 +1,23 @@
+{
+  "name": "quicklee-css",
+  "version": "0.0.1",
+  "description": "QuickLee CSS is The mobile first, bare bones web development framework written in SASS",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee89/QuickLee-CSS.git"
+  },
+  "author": "Lee Price",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lee89/QuickLee-CSS/issues"
+  },
+  "homepage": "https://github.com/lee89/QuickLee-CSS#readme",
+  "devDependencies": {
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.11.0"
+  }
+}
